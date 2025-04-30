@@ -65,7 +65,7 @@ public class producto {
         for(int i = 1; i <= cantidad; i++){
             producto p = new producto ();
             p.setId(i);
-            p.setNombre("Producto " + i);
+            p.setNombre("producto " + i);
             p.setPrecio(10 + Math.random() + 90);
             p.setCategoria(categorias[i % categorias.length]);
             productos.add(p);

@@ -4,6 +4,8 @@
     Author     : Personal
 --%>
 
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,7 +24,7 @@
 <body>
     <h1>Listado de Productos</h1>
     <%
-        List<Producto> productos = (List<Producto>)
+        List<producto> productos = (List<producto>)
     request.getAttribute("productos");
         Set<String> categorias = (Set<String>)
     request.getAttribute("categorias");
@@ -57,7 +59,7 @@ request.getAttribute("categoriaActual");
             <td colspan="4">No hay productos disponibles</td>
         </tr>
     <% } else { %>
-        <% for(Producto p : productos) { %>
+        <% for(producto p : productos) { %>
             <tr>
                 <td><%= p.getId() %></td>
                 <td><%= p.getNombre() %></td>
